@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #263579;
+}
+
+nav {
+    background: #263579;
+    padding: 14px 5%;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 24px 5%;
+    min-height: 70vh;
+}
+
+aside {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 190px;
+}
+
+aside button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+}
+
+.banner {
+    padding: 35px;
+    background: #e3e8ff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    color: #263579;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.product {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.emoji {
+    font-size: 48px;
+    background: #f1f2f7;
+    padding: 20px;
+}
+
+.product button {
+    background: #263579;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #263579;
+    color: white;
+    padding: 20px;
+}
+
+.active {
+    background: #263579;
+    color: white;
+}
+
+@media(max-width:650px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
